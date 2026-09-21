@@ -1,0 +1,135 @@
+{
+  "info": {
+    "_postman_id": "eaa9a917-fdc6-4f3d-9b16-51fefdb7f641",
+    "name": "modül2 3-4",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54784462",
+    "_collection_link": "https://go.postman.co/collection/54784462-eaa9a917-fdc6-4f3d-9b16-51fefdb7f641?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Melek Yilmaz\",\n  \"email\": \"melekyilmaztest@gmail.com\",\n  \"password\": \"SecurePassword123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/user/register",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "user",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"melekyilmaztest@gmail.com\",\n  \"password\": \"SecurePassword123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/user/login",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "user",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Yanlış Şifre ile Login Testi",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"melekyilmaztest@gmail.com\",\n  \"password\": \"melek123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/user/login",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "user",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eksik Alan ile Register Testi",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Melek Yilmaz\",\n  \"email\": \"melekyilmaztest@gmail.com\",\n  \"password\": \"\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/user/register",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "user",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

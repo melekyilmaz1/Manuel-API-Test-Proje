@@ -1,0 +1,333 @@
+{
+  "info": {
+    "_postman_id": "c3987359-f3f8-43bd-8921-ea5229a78d73",
+    "name": "modül6 20--27",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54784462",
+    "_collection_link": "https://go.postman.co/collection/54784462-c3987359-f3f8-43bd-8921-ea5229a78d73?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "mevcut pano",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_0630}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/boards",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "boards"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sütun ekleme",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_0i5r}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{vault:json_web_token_0i5r}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"meke\",\n  \"board\": \"6aab61631d58b3c1b35b1760\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/columns",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "columns"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sütun güncelleme",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{vault:json_web_token_0i5r}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{vault:json_web_token_0i5r}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"meke updated\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/columns/6aab8efc1d58b3c1b35b17e6",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "columns",
+            "6aab8efc1d58b3c1b35b17e6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "silme",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{vault:json_web_token_0i5r}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/columns/6aab8efc1d58b3c1b35b17e6",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "columns",
+            "6aab8efc1d58b3c1b35b17e6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sütuna görev ekleme",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token1}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token1}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Figure out what is swagger\",\n  \"description\": \"Açıklama metni buraya\",\n  \"deadline\": \"2023-07-21T20:57:15.000Z\",\n  \"priority\": \"high\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/columns/6aab90fe1d58b3c1b35b17f3/tasks",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "columns",
+            "6aab90fe1d58b3c1b35b17f3",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token1}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token1}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Swagger Dokümantasyonunu Tamamla\",\n  \"description\": \"API uç noktalarını Postman üzerinde test et ve eksik senaryoları kapat.\",\n  \"deadline\": \"2026-09-25T20:57:15.000Z\",\n  \"priority\": \"high\",\n  \"column\": \"649885bb8cfd32ed13fd42d3\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/tasks/6aab926c1d58b3c1b35b1800",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "tasks",
+            "6aab926c1d58b3c1b35b1800"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patch tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token1}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token1}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"column\": \"6aab60f51d58b3c1b35b1751\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/tasks/6aab926c1d58b3c1b35b1800",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "tasks",
+            "6aab926c1d58b3c1b35b1800"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

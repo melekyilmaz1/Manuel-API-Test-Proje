@@ -1,0 +1,568 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Inward issue link (Blocks),Outward issue link (Blocks),Attachment,Attachment,Attachment,Attachment,Custom field (Atlassian Project),Custom field (Atlassian project),Custom field (Atlassian project status),Custom field (Comments),Custom field (Customer segments),Custom field (Customer segments),Custom field (Delivery progress),Custom field (Delivery status),Custom field (Design file),Custom field (Designs ready),Custom field (Development),Custom field (Documents),Custom field (Effort),Custom field (Goals),Custom field (Idea archived),Custom field (Idea archived on),Custom field (Idea short description),Custom field (Impact),Custom field (Insights),Custom field (Issue colour),Custom field (Linked items),Custom field (Project start),Custom field (Project target),Custom field (Rank),Custom field (Roadmap),Custom field (Score),Custom field (Start date),Custom field (State),Custom field (Team),Custom field (Theme),Custom field (Vulnerability),Comment,Parent,Parent key,Parent summary,Status Category,Status Category Changed
+TC-04: Formun Kapatma Butonu (x) ile Kapatılması,TAS-77,10312,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:22 PM,17/Sep/26 2:31 PM,,17/Sep/26 2:31 PM,,0,,,"* *Ön Koşul:* Görev ekleme veya düzenleme formu açık olmalıdır.
+* *Test Adımları:*
+*# Form alanlarına yeni veriler girilir veya mevcut veriler değiştirilir.
+*# Form üzerindeki kapatma butonuna ({{x}}) tıklanır.
+* *Beklenen Sonuç:* Modal pencere hiçbir değişiklik kaydedilmeden kapanır ve kart verileri eski halinde kalır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000cl:,,,,,,,,,10308,TAS-73,modül7 28--31,Done,17/Sep/26 2:31 PM
+TC-03: Başarılı Görev Oluşturma / Düzenleme ve Hata Durumu,TAS-76,10311,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:21 PM,17/Sep/26 2:31 PM,,17/Sep/26 2:31 PM,,0,,,"* *Ön Koşul:* Görev ekleme veya düzenleme formu açık olmalıdır.
+* *Test Adımları:*
+*# Formdaki zorunlu alanlar doldurulur ve *""Add""* (veya düzenlemede *""Edit""*) butonuna tıklanır.
+*# Alternatif olarak geçersiz/hatalı verilerle (veya sunucu hatası simüle edilerek) form gönderilir.
+* *Beklenen Sonuç:*
+** Başarılı durumda görev ilgili koleksiyona eklenir veya güncellenir.
+** Hata durumunda kullanıcıya ilgili bildirim gösterilir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000cn:,,,,,,,,,10308,TAS-73,modül7 28--31,Done,17/Sep/26 2:31 PM
+TC-02: Görev Düzenleme (Edit card) Formunun Mevcut Verilerle Açılması,TAS-75,10310,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:21 PM,17/Sep/26 2:31 PM,17/Sep/26 2:30 PM,17/Sep/26 2:31 PM,,0,,,"* *Ön Koşul:* Sistemde daha önceden oluşturulmuş bir görev kartı bulunmalıdır.
+* *Test Adımları:*
+*# Görev üzerindeki düzenleme ({{Edit card}}) butonuna tıklanır.
+*# Açılan formdaki Title, Description, öncelik ve tarih alanları incelenir.
+* *Beklenen Sonuç:* Form, daha önce girilmiş olan mevcut verilerle dolu olarak açılır ve bu veriler kullanıcı tarafından değiştirilebilir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000cz:,,,,,,,,,10308,TAS-73,modül7 28--31,Done,17/Sep/26 2:31 PM
+TC-01: Görev Ekleme (Add card) Formu Elemanlarının ve Varsayılan Değerlerin Doğrulanması,TAS-74,10309,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:21 PM,17/Sep/26 2:30 PM,,17/Sep/26 2:30 PM,,0,,,"* *Ön Koşul:* Kullanıcı bir sütun altındaki ""Add another card"" butonuna tıklamış olmalıdır.
+* *Test Adımları:*
+*# Açılan ""Add card"" formunda kapatma butonunun ({{x}}), Title ve Description alanlarının varlığı kontrol edilir.
+*# Öncelik seçenekleri incelenir; {{low}} (mavi), {{medium}} (kırmızı), {{high}} (yeşil) ve {{without}} (gri) seçeneklerinin yer aldığı doğrulanır.
+*# Öncelik alanında varsayılan olarak gri ({{without}}) rengin seçili olduğu kontrol edilir.
+*# Takvim alanından geçmiş bir tarih seçilmeye çalışılır ve bugünden itibaren seçim yapıldığı doğrulanır.
+* *Beklenen Sonuç:* Tüm form elemanları eksiksiz yer alır, varsayılan öncelik gri renktedir ve geçmiş tarihler seçilemez.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000cr:,,,,,,,,,10308,TAS-73,modül7 28--31,Done,17/Sep/26 2:30 PM
+modül7 28--31,TAS-73,10308,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:20 PM,17/Sep/26 2:20 PM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dark_green,,,,0|i000cj:,,,,,,,,,,,,To Do,17/Sep/26 2:20 PM
+Zil İkonunun (Deadline Uyarısı) Kartlar Arasında Tutarsız Gösterilmesi,TAS-72,10307,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:18 PM,17/Sep/26 2:19 PM,21/Sep/26 9:06 PM,,,0,,,"* *Hata Tanımı:* Son tarihi ({{Deadline}}) aynı gün olan görev kartlarında zil ikonunun görünürlüğü tutarsızlık göstermektedir. Bazı kartlarda zil ikonu görünürken, aynı tarihe sahip diğer kartlarda zil butonu tamamen eksiktir.
+* *Beklenen Durum:* Son tarihi sistemin bugünkü tarihine eşit olan tüm görev kartlarında zil butonunun istisnasız olarak yer alması gerekir.
+* *Mevcut Durum:* Aynı bitiş tarihine sahip bazı kartlarda zil ikonu eksik gelmektedir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,17/Sep/26 2:18 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 14.17.07.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10143,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000cb:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,To Do,17/Sep/26 2:18 PM
+TC-18: Sütun Altı Yeni Kart Ekleme Akışı,TAS-71,10306,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:11 PM,17/Sep/26 2:16 PM,17/Sep/26 2:15 PM,17/Sep/26 2:16 PM,,0,,,"* *Ön Koşul:* Kullanıcı panoda aktif bir sütun üzerinde bulunmalıdır.
+* *Test Adımları:*
+*# Sütun alt kısmında yer alan *""Add another card""* butonuna tıklanır.
+*# Açılan kart ekleme arayüzünden gerekli bilgiler girilerek kart oluşturulur.
+* *Beklenen Sonuç:* Yeni görev kartı ilgili sütunun içerisine başarılı bir şekilde eklenir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008u:i,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 2:16 PM
+TC-17: Kart Silme ve Zil Uyarısı İşlevleri,TAS-70,10305,Task,In Review,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:11 PM,17/Sep/26 2:16 PM,17/Sep/26 2:16 PM,,,0,,,"* *Ön Koşul:* Son tarihi bugün olan bir görev kartı sistemde mevcut olmalıdır.
+* *Test Adımları:*
+*# Son tarihi bugün olan görev kartında *zil butonunun* aktif ve görünür olduğu kontrol edilir.
+*# Kart üzerindeki *silme butonuna* tıklanarak görevin sistemden kaldırıldığı doğrulanır.
+* *Beklenen Sonuç:* Zil butonu bugünün son tarih olduğunu belirtmek üzere düzgün görüntülenir ve silme butonu görevi başarıyla siler.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008t:i,,,,,,,,,10222,TAS-51,modül6 20 -- 27,To Do,17/Sep/26 2:11 PM
+TC-16: Kart Taşıma ve Düzenleme İşlevleri,TAS-69,10304,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:10 PM,17/Sep/26 2:15 PM,17/Sep/26 2:14 PM,17/Sep/26 2:15 PM,,0,,,"* *Ön Koşul:* Sütun içinde etkileşime uygun bir görev kartı ve en az iki farklı sütun bulunmalıdır.
+* *Test Adımları:*
+*# Kart üzerindeki *taşıma butonuna* tıklanarak diğer grupların listelendiği açılır menünün açıldığı doğrulanır.
+*# Kartı *düzenleme butonuna (*{{Edit card}}*)* tıklanarak modal pencerenin mevcut görevin verileriyle dolu ve düzenlenebilir şekilde açıldığı kontrol edilir.
+* *Beklenen Sonuç:* Taşıma menüsü diğer grupları listeler ve düzenleme modalı mevcut görev verileriyle sorunsuz açılır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008u:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 2:15 PM
+TC-15: Sütun Başlığı ve Görev Kartı Elemanlarının Doğrulanması (Madde 26),TAS-68,10303,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:10 PM,17/Sep/26 2:14 PM,17/Sep/26 2:13 PM,17/Sep/26 2:14 PM,,0,,,"* *Ön Koşul:* Sistemde en az bir sütun ve bu sütun içinde detaylı bir görev kartı bulunmalıdır.
+* *Test Adımları:*
+*# Sütun başlığı bloğunda; sütun adı, düzenleme ve silme ikonlarının görünürlüğü kontrol edilir.
+*# Görev kartı üzerinde; başlık, sabit yükseklikte olup sığmadığında üç nokta ({{...}}) ile kesilen açıklama, renkli öncelik etiketi ve bitiş tarihi incelenir.
+*# Sütun altındaki *""Add another card""* butonunun varlığı doğrulanır.
+* *Beklenen Sonuç:* Tüm sütun başlığı bileşenleri ve görev kartı elemanları şartnameye uygun olarak eksiksiz görüntülenir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008v:9,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 2:14 PM
+"Modal Alanı Dışına Taşan ""Is Required"" Hata Mesajı ve Buton İsim Uyumsuzluğu",TAS-67,10302,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 2:01 PM,17/Sep/26 2:01 PM,21/Sep/26 9:06 PM,,,0,,,"* *Ön Koşul:* Kullanıcı panoya giriş yapmış ve sütun ekleme modal penceresi açık olmalıdır.
+* *Test Adımları:*
+*# Arayüzdeki *""Add another column""* butonuna tıklanır.
+*# Sütun başlığı ({{Title}}) alanı boş bırakılır.
+*# Penceredeki *""Add""* butonuna tıklanır.
+* Şartnamede add column butonu olarak bilinen buton canlıda adı *Add another column* dur isim uyuşmazlığı vardır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,17/Sep/26 2:01 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 13.55.26.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10142,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000c3:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,To Do,17/Sep/26 2:01 PM
+TC-14: Modal Pencerenin Kapatma Butonu (x) ile Kapatılması,TAS-66,10269,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 10:44 AM,17/Sep/26 2:04 PM,17/Sep/26 10:46 AM,17/Sep/26 2:04 PM,,0,,,"* *Ön Koşul:* Sütun ekleme veya düzenleme modal penceresi açık olmalıdır.
+* *Test Adımları:*
+*# Başlık alanına veri girilir veya değiştirilir.
+*# Modal pencerenin sağ üst köşesindeki *kapatma butonuna (*{{x}}*)* tıklanır.
+* *Beklenen Sonuç:* Hiçbir veri kaydedilmeden modal pencere kapanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008v:i,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 2:04 PM
+TC-13: Sütun Düzenlerken Başlığın Boş Bırakılması,TAS-65,10268,Task,In Review,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 10:43 AM,17/Sep/26 2:04 PM,17/Sep/26 10:45 AM,,,0,,,"* *Ön Koşul:* Sütun düzenleme modal penceresi açık olmalıdır.
+* *Test Adımları:*
+*# Başlık alanındaki mevcut metin tamamen silinerek alan boş bırakılır.
+*# *""Add""* butonuna tıklanır.
+* *Beklenen Sonuç:* Alan boş olduğu için değişiklikler kaydedilemez ve sütun güncellenmez.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008t:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,To Do,17/Sep/26 10:43 AM
+TC-12: Sütun Düzenleme ve Mevcut Verinin Gelmesi,TAS-64,10267,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 10:43 AM,17/Sep/26 2:04 PM,17/Sep/26 2:02 PM,17/Sep/26 2:04 PM,,0,,,"** *Ön Koşul:* Sistemde daha önceden oluşturulmuş bir sütun bulunmalıdır.
+** *Test Adımları:*
+**# İlgili sütundaki *""Edit Column""* butonuna tıklanır.
+**# Açılan modal pencerede başlık alanının otomatik olarak mevcut veriyle dolu geldiği kontrol edilir.
+**# Başlık alanında değişiklik yapılır ve *""Add""* butonuna tıklanır.
+** *Beklenen Sonuç:* Sütun başlığı güncellenmiş yeni veriyle kaydedilir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008w:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 2:04 PM
+TC-11: Boş Başlık ile Sütun Oluşturmanın Engellenmesi,TAS-63,10266,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 10:42 AM,17/Sep/26 2:02 PM,17/Sep/26 2:01 PM,17/Sep/26 2:02 PM,,0,,,"** *Ön Koşul:* Sütun ekleme modal penceresi açık olmalıdır.
+** *Test Adımları:*
+**# Sütun başlığı ({{Title}}) alanı boş bırakılır.
+**# *""Add""* butonuna tıklanır.
+** *Beklenen Sonuç:* Sütun oluşturulamaz, sistem uyarı verir ve veri kaydedilmez.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008x:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 2:02 PM
+TC-10: Yeni Sütun Ekleme ve Arayüz Konumlanması,TAS-62,10265,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 10:42 AM,17/Sep/26 1:59 PM,17/Sep/26 1:56 PM,17/Sep/26 1:59 PM,,0,,,"* *Ön Koşul:* Kullanıcı panoya giriş yapmış olmalıdır.
+* *Test Adımları:*
+*# Arayüzde bulunan *""Add Column""* butonuna tıklanır.
+*# Açılan modal pencerede sütun başlığı ({{Title}}) alanına geçerli bir isim girilir.
+*# Penceredeki *""Add""* butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Girilen veriler sisteme kaydedilir.
+** Modal pencere kapanır ve *""Add Column""* butonu sağa kayarak yerini yeni oluşturulan sütuna bırakır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008v:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 1:59 PM
+Küçük Ekranlarda Ana Sayfa Arayüzünün Bozulması,TAS-61,10232,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:31 AM,17/Sep/26 6:33 AM,21/Sep/26 9:06 PM,,,0,,,"* *Özet (Summary):* [Responsive] 320px ve küçük ekran genişliklerinde ana sayfa arayüz bileşenleri bozulmaktadır.
+* *Modül:* Dashboard / Ana Sayfa (Şartname Madde 20)
+* *Ön Koşullar (Pre-conditions):*
+** Kullanıcı sisteme giriş yapmış olmalıdır.
+** Aktif bir pano sayfası açık olmalıdır.
+* *Test Adımları (Steps to Reproduce):*
+*# Tarayıcının geliştirici araçları (Device Toolbar) açılır.
+*# Ekran çözünürlüğü {{320px}} genişliğe (küçük mobil boyutuna) ayarlanır.
+*# Ana sayfadaki pano başlığı, filtreler ve sütun bloklarının yerleşimi gözlemlenir.
+* *Beklenen Sonuç (Expected Result):* Şartname Madde 20 gereğince; ana sayfanın tüm desteklenen mobil çözünürlüklerde (standart ve küçük ekranlar dahil) duyarlı (responsive) tasarıma tam uygun, düzgün ve okunabilir şekilde görüntülenmesi beklenir.
+* *Gerçekleşen Sonuç (Actual Result):* Standart telefon boyutlarında ({{375px}} ve üzeri) arayüz sorunsuz çalışırken, {{320px}}genişliğindeki küçük ekranlarda arayüz elemanları birbirine girmekte ve tasarım bozulmaktadır.
+Ayrıca new board ekledikten sonra ekleniyor fakat normal ekranlardan olan Create a new Board altına oluşturduğumuz gelmesi gereken Board küçük ekranlarda gelmiyor.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,17/Sep/26 6:32 AM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 06.22.47.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10105,17/Sep/26 6:32 AM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 06.23.02.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10106,17/Sep/26 6:32 AM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 06.26.54.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10107,17/Sep/26 6:32 AM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 06.27.45.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10109,,,,,,,,,,,,,,,,,,,,,,,,0|i000ar:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,To Do,17/Sep/26 6:32 AM
+"TC_09: Filtreyi Temizleme (""Show All"")",TAS-60,10231,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:18 AM,17/Sep/26 6:47 AM,17/Sep/26 6:46 AM,17/Sep/26 6:47 AM,,0,,,"* *Ön Koşul:* Panoda öncelik filtresi uygulanmış ve görevler daraltılmış/filtrelenmiş durumda olmalıdır.
+* *Test Adımları:* Filtre modalı içindeki *""Show all""* butonuna tıklanır.
+* *Beklenen Sonuç:* Tüm öncelik filtreleri kaldırılmalı ve panodaki tüm görevler tekrar eksiksiz listelenmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008z:9,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:47 AM
+TC_08: Görev Önceliklerine Göre Filtreleme,TAS-59,10230,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:18 AM,17/Sep/26 6:46 AM,,17/Sep/26 6:46 AM,,0,,,"* *Ön Koşul:* Panoda farklı öncelik seviyelerine ({{low}}, {{medium}}, {{high}}, {{without}}) sahip görevler eklenmiş ve filtre modalı açık olmalıdır.
+* *Test Adımları:*
+*# Modaldan belirli bir öncelik seçeneği seçilir.
+*# Pano üzerindeki görevlerin listelenme durumu gözlemlenir.
+* *Beklenen Sonuç:* Yalnızca seçilen önceliğe sahip görevler ekranda filtrelenerek gösterilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008z:i,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:46 AM
+TC_07: Pano Arka Plan Seçenekleri,TAS-58,10229,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:17 AM,17/Sep/26 6:46 AM,17/Sep/26 6:46 AM,17/Sep/26 6:46 AM,,0,,,"* *Ön Koşul:* Filtreleme/Arka plan modalı açık durumda olmalıdır.
+* *Test Adımları:* Modaldaki arka plan seçenekleri listesi incelenir ve seçim yapılır.
+* *Beklenen Sonuç:* Listede ''arka plan yok'' seçeneği dahil tüm arka planlar yer almalı ve seçilen arka plan panoya uygulanabilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00090:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:46 AM
+TC_06: Filtreleme Modalının Açılması ve Kapatılması,TAS-57,10228,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:16 AM,17/Sep/26 6:46 AM,17/Sep/26 6:43 AM,17/Sep/26 6:46 AM,,0,,,"* *Ön Koşul:* Kullanıcı ana sayfada olmalı ve ""Filters"" butonuna erişebilir durumda olmalıdır.
+* *Test Adımları:*
+*# ""Filters"" butonuna tıklanır.
+*# Açılan modaldaki kapatma ({{x}}) butonuna tıklanır.
+* *Beklenen Sonuç:* Butona tıklandığında filtreleme ve arka plan modalı açılmalı; {{x}} butonuna tıklandığında modal herhangi bir değişiklik yapmadan kapanmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00091:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:46 AM
+TC_SCR_05: Dikey Kaydırma (Vertical Scroll) Kontrolü,TAS-56,10227,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:11 AM,17/Sep/26 6:43 AM,17/Sep/26 6:43 AM,17/Sep/26 6:43 AM,,0,,,"* *Ön Koşul:* Bir sütun içerisinde ekran yüksekliğini aşacak kadar çok kart/görev eklenir.
+* *Test Adımları:* Sütun içeriği dikeyde kaydırılır.
+* *Beklenen Sonuç:* Sayfanın tamamı değil, yalnızca ilgili sütunun konteyneri içinde bağımsız bir dikey kaydırma çubuğu oluşmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00093:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:43 AM
+TC_SCR_04: Yatay Kaydırma (Horizontal Scroll) Kontrolü,TAS-55,10226,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:10 AM,17/Sep/26 6:42 AM,,17/Sep/26 6:42 AM,,0,,,"* *Ön Koşul:* Ekran genişliğini aşacak sayıda sütun oluşturulur.
+* *Test Adımları:* Sayfada yatay kaydırma çubuğu kullanılır.
+* *Beklenen Sonuç:* Sütunlar yatayda kaydırılabilir olmalı; ancak üstteki Header ve yandaki Sidebar sabit kalmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0009f:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:42 AM
+TC_UI_03: Sütun İçi Bileşenlerin Varlığı,TAS-54,10225,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:10 AM,17/Sep/26 6:42 AM,17/Sep/26 6:42 AM,17/Sep/26 6:42 AM,,0,,,"* *Test Adımları:* Pano üzerindeki mevcut bir sütun incelenir.
+* *Beklenen Sonuç:* Her sütunun içinde; sütun başlığı, görev listesi ve ""Add another card"" butonunun bulunduğu doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00097:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:42 AM
+TC_UI_02: Ana Sayfa Temel Elemanlarının Varlığı,TAS-53,10224,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:09 AM,17/Sep/26 6:39 AM,17/Sep/26 6:33 AM,17/Sep/26 6:39 AM,,0,,,"* *Test Adımları:* Pano sayfası açılır.
+* *Beklenen Sonuç:* Sayfada sırasıyla şu bileşenlerin yer aldığı doğrulanır:
+** Pano başlığı
+** Filters butonu
+** Add another column butonu
+** Oluşturulmuş sütunlar bloğu",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008z:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,Done,17/Sep/26 6:39 AM
+TC_RESP_01: Farklı Ekran Çözünürlüklerine Uygunluk,TAS-52,10223,Task,In Review,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:07 AM,17/Sep/26 6:28 AM,17/Sep/26 6:19 AM,,,0,,,"* *Ön Koşul:* Kullanıcı sisteme giriş yapmış ve bir panoda bulunmalıdır.
+* *Test Adımları:*
+*# Sayfa 3 farklı temel çözünürlükte (Mobil, Tablet, Masaüstü) açılır.
+*# Arayüz elemanlarının konumu ve düzeni kontrol edilir.
+* *Beklenen Sonuç:* Ana sayfa, belirlenen 3 farklı çözünürlükteki tasarıma tam uygun olarak düzgün ve bozulmasız görüntülenmelidir",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008r:,,,,,,,,,10222,TAS-51,modül6 20 -- 27,To Do,17/Sep/26 6:07 AM
+modül6 20 -- 27,TAS-51,10222,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,17/Sep/26 6:06 AM,17/Sep/26 6:06 AM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,grey,,,,0|i0008j:,,,,,,,,,,,,To Do,17/Sep/26 6:06 AM
+Need Help modal - Mesaj alanı karakter sınırı eksikliği,TAS-50,10189,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:46 PM,17/Sep/26 6:05 AM,21/Sep/26 9:03 PM,,,0,,,"
+
+* *Özet (Summary):* Need Help modal - Şartnamede belirtilmemesine rağmen sitede mesaj alanı için karakter kısıtı (örn. en az 10 karakter) yer alıyor.
+* *Ön Koşullar:* Need Help yardım formu açık olmalıdır.
+* *Test Adımları:*
+*# Mesaj alanına 10 karakterden az bir metin girilir.
+*# *Send* butonuna tıklanır.
+* 
+*# *Beklenen Sonuç:* Gereksinim dokümanında (şartnamede) mesaj alanı için herhangi bir karakter alt sınırı belirtilmemiştir. Sadece ""doldurulması zorunlu"" olduğu söylenmiştir. Dolayısıyla dokümana uygun davranılmalıdır.
+*# *Gerçekleşen Sonuç:* Canlı sitede mesaj alanı için dokümanda yer almayan gizli bir karakter kısıtı (örn. min 10 karakter) bulunmaktadır ve kısa mesajlar bu kurala takılmaktadır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,16/Sep/26 7:46 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-16 19.46.21.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10068,17/Sep/26 6:05 AM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 06.04.09.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10104,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0008b:,,,,,,,,,10179,TAS-40,modül5 13--19,To Do,16/Sep/26 7:46 PM
+Need Help modal - Send işleminden sonra başarı bildirimi (toast/alert) gösterilmiyor,TAS-49,10188,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:42 PM,17/Sep/26 5:51 AM,21/Sep/26 9:03 PM,,,0,,,"* *Özet (Summary):* Need Help modalı - Send butonuna tıkladıktan sonra herhangi bir başarı onay mesajı gösterilmiyor.
+* *Ön Koşullar:* Need Help yardım formu açık olmalıdır.
+* *Test Adımları:*
+*# E-posta ve mesaj alanları kurallara uygun şekilde doldurulur.
+*# *Send* butonuna tıklanır.
+* *Beklenen Sonuç:* Form kapandıktan veya gönderim tamamlandıktan sonra kullanıcıya mesajın başarıyla iletildiğine dair bir bilgilendirme mesajı (toast/popup) gösterilmelidir.
+* *Gerçekleşen Sonuç:* Form kapanmakta ancak kullanıcıya gönderildiğine dair herhangi bir bilgilendirme yapılmamaktadır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,16/Sep/26 7:47 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-16 19.47.09.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10070,16/Sep/26 7:47 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-16 19.47.29.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10069,17/Sep/26 5:51 AM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-17 05.51.01.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10103,,,,,,,,,,,,,,,,,,,,,,,,,0|i00083:,,,,,,,,,10179,TAS-40,modül5 13--19,To Do,16/Sep/26 7:42 PM
+TC-08: Log Out (Oturumu Kapatma) İşlemi,TAS-48,10187,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:31 PM,16/Sep/26 7:48 PM,21/Sep/26 9:03 PM,16/Sep/26 7:48 PM,,0,,,"* *Ön Koşul:* Kullanıcı sisteme giriş yapmış olmalıdır.
+* *Test Adımları:*
+*# SideBar alt kısmında yer alan *Log Out* butonuna tıklanır.
+* *Beklenen Sonuç:* Kullanıcının aktif oturumu sonlandırılmalı, sistem dışına atılmalı ve kullanıcı yetkisiz duruma (giriş sayfasına) yönlendirilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006v:9,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:48 PM
+TC-07: Need Help (Yardım Formu) Modali ve Gönderim,TAS-47,10186,Task,In Review,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:31 PM,16/Sep/26 7:40 PM,16/Sep/26 7:36 PM,,,0,,,"* *Ön Koşul:* SideBar açık durumda olmalıdır.
+* *Test Adımları:*
+*# SideBar'daki *Need Help* bloğunda yer alan yardım formu bağlantısına tıklanır.
+*# Açılan modalda kapatma ({{x}}) butonu, zorunlu e-posta alanı, zorunlu mesaj metni alanı ve *Send* butonu kontrol edilir.
+*# Alanlar boş bırakılarak veya kurallara aykırı doldurularak Send butonuna tıklanır (Doğrulama testi).
+*# Alanlar geçerli şekilde doldurularak *Send* butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Kapatma butonuna basıldığında veriler kaydedilmeden modal kapanmalıdır.
+** E-posta ve mesaj alanları zorunlu olmalı, eksik/hatalı durumlarda doğrulama uyarısı verilmelidir.
+** Geçerli verilerle Send butonuna tıklandığında alan doğrulaması geçilmeli ve sunucuya istek gönderilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0007n:,,,,,,,,,10179,TAS-40,modül5 13--19,To Do,16/Sep/26 7:31 PM
+TC-06: Tahta Silme İşlemi,TAS-46,10185,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:30 PM,16/Sep/26 7:36 PM,16/Sep/26 7:35 PM,16/Sep/26 7:36 PM,,0,,,"* *Ön Koşul:* SideBar'da silinecek bir tahta mevcut olmalıdır.
+* *Test Adımları:*
+*# Tahta satırında bulunan *silme simgesine* tıklanır.
+* *Beklenen Sonuç:* Tahta, sol taraftaki tahta listesinden anında silinmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006v:i,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:36 PM
+TC-05: Edit Board Modali ve Tahta Düzenleme,TAS-45,10184,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:29 PM,16/Sep/26 7:35 PM,16/Sep/26 7:32 PM,16/Sep/26 7:35 PM,,0,,,"* *Ön Koşul:* Sistemde daha önceden oluşturulmuş bir tahta bulunmalıdır.
+* *Test Adımları:*
+*# SideBar içerisindeki tahta üzerinde bulunan *düzenleme simgesine* tıklanır.
+*# Açılan *Edit board* modalında; kapatma ({{x}}) butonu, mevcut adı içeren tahta adı alanı, seçili simge/arka plan listeleri ve *Edit* butonu kontrol edilir.
+*# Tahta adı değiştirilir veya boş bırakılır ve *Edit* butonuna tıklanır.
+* *Beklenen Sonuç:*
+** Kapatma butonuna tıklandığında değişiklikler kaydedilmeden modal kapanmalıdır.
+** {{Title}} alanı boş bırakıldığında tahta kaydedilmemelidir.
+** Geçerli veriler girilip Edit butonuna basıldığında yeni veriler kaydedilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006w:i,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:35 PM
+TC-04: Geçerli Bilgilerle Yeni Tahta Oluşturma (Positive),TAS-44,10183,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:12 PM,16/Sep/26 7:26 PM,16/Sep/26 7:26 PM,16/Sep/26 7:26 PM,,0,,,"* *Ön Koşul:* ""Create a new board"" modali açık olmalıdır.
+* *Test Adımları:*
+*# Tahta adı (*title*) alanına geçerli bir isim yazılır.
+*# İstenirse simge ve arka plan seçimi yapılır.
+*# *Create* butonuna tıklanır.
+* *Beklenen Sonuç:* Yeni tahta başarıyla oluşturulmalı, modal kapanmalı ve tahta listesine eklenmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006w:,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:26 PM
+3 TC-03: Boş Title ile Tahta Oluşturma (Negative),TAS-43,10182,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:11 PM,16/Sep/26 7:26 PM,16/Sep/26 7:23 PM,16/Sep/26 7:26 PM,,0,,,"* *Ön Koşul:* ""Create a new board"" modali açık olmalıdır.
+* *Test Adımları:*
+*# Tahta adı (*title*) alanı boş bırakılır.
+*# Diğer opsiyonlar seçilerek *Create* butonuna tıklanır.
+* *Beklenen Sonuç:* Title alanı boş olduğu için yeni tahta *oluşturulmamalıdır* ve sistem hata/uyarı vermelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006x:,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:26 PM
+TC-2: Create a New Board Modali Arayüz Kontrolü,TAS-42,10181,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:10 PM,16/Sep/26 7:23 PM,16/Sep/26 7:25 PM,16/Sep/26 7:23 PM,,0,,,"* *Ön Koşul:* SideBar açık durumda olmalıdır.
+* *Test Adımları:*
+*# *""Create a new board""* butonuna tıklanır ve açılan pencere gözlemlenir.
+* *Beklenen Sonuç:* Pencere içerisinde şu öğeler eksiksiz yer almalıdır:
+** Değişiklikleri kaydetmeden kapatan *kapatma (x)* butonu.
+** Zorunlu tahta adı giriş alanı (*Title*).
+** Varsayılan olarak ilk simgenin seçili olduğu *simgeler listesi*.
+** Varsayılan olarak ""arka plansız"" seçeneğinin seçili olduğu *arka plan seçenekleri listesi*.
+** *""Create""* butonu.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006v:,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:23 PM
+TC-01: SideBar Bileşenleri ve Görünürlük Kontrolü,TAS-41,10180,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:09 PM,16/Sep/26 7:15 PM,16/Sep/26 7:13 PM,16/Sep/26 7:15 PM,,0,,,"* *Ön Koşul:* Kullanıcı mobil/tablet görünümünde olmalı ve hamburger menüye tıklayarak SideBar açılmalıdır (masaüstünde SideBar zaten görünür olmalıdır).
+* *Test Adımları:*
+*# Açılan SideBar bileşenleri tek tek incelenir.
+* *Beklenen Sonuç:*
+** Uygulamanın logosu yer almalıdır.
+** *""Create a new board""* butonu görünür olmalıdır.
+** Varsa mevcut tahta listesi (tahta simgesi, adı, düzenleme/silme ikonları) listelenmelidir.
+** *""Need Help""* bloku ve yardım formu bağlantısı bulunmalıdır.
+** *""Log Out""* butonu yer almalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006z:,,,,,,,,,10179,TAS-40,modül5 13--19,Done,16/Sep/26 7:15 PM
+modül5 13--19,TAS-40,10179,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 7:05 PM,16/Sep/26 7:05 PM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dark_blue,,,,0|i0006r:,,,,,,,,,,,,To Do,16/Sep/26 7:05 PM
+Edit Profile - Şifre uzunluk doğrulaması çalışmıyor,TAS-39,10178,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:59 PM,16/Sep/26 6:02 PM,21/Sep/26 9:02 PM,,,0,,,"* *Özet (Summary):* Edit Profile modalı - Şifre alanı kural dışı uzunluktaki değerleri (örn. 8 karakter şartı varken 1 karakter) doğrulama hatası vermeden kabul ediyor.
+* *Ön Koşullar:* ""Edit profile"" modali açık olmalıdır.
+* *Test Adımları:*
+
+
+
+* a. name ve email alanı geçerli doldurulur.
+* b. Şifre alanına belirlenen kurallara ve karakter sınırına uymayan uzunlukta bir değer (örn. 1 karakter) girilir.
+* *c. Send* butonuna tıklanır.
+
+
+
+* *Beklenen Sonuç:* Şifre kurallarına uymayan durumlarda sistemin hata vermesi, işlemi engellemesi ve kullanıcıya uygun bir uyarı mesajı göstermesi gerekir.
+* *Gerçekleşen Sonuç:* Kurallara aykırı olmasına rağmen şifre girdisi kabul edilmekte ve herhangi bir doğrulama hatası alınmamaktadır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,16/Sep/26 6:01 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-16 17.59.38.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10033,16/Sep/26 6:01 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-16 17.59.45.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10034,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006f:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,To Do,16/Sep/26 5:59 PM
+Send Butonu İşlevsiz ve Doğrulama Yapmıyor,TAS-38,10177,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:52 PM,16/Sep/26 5:52 PM,16/Sep/26 6:03 PM,,,0,,,"* *Özet (Summary):* Edit Profile modalı - Send butonu işlevsiz ve herhangi bir doğrulama (validation) yapmıyor.
+* *Ön Koşullar:* ""Edit profile"" modali açık olmalıdır.
+* *Test Adımları:*
+*# Modal içerisindeki alanlar boş bırakılır veya geçersiz formatta veriler girilir.
+*# *Send* butonuna tıklanır.
+* *Beklenen Sonuç:* Send butonuna tıklandığında kayıt/giriş ekranlarındaki gibi alan doğrulaması (validation) çalışmalı ve hatalı/eksik durumlarda kullanıcıya uygun mesajlar gösterilmelidir.
+* *Gerçekleşen Sonuç:* Send butonuna tıklandığında hiçbir doğrulama gerçekleşmemekte ve buton tamamen işlevsiz kalmaktadır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006j:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,To Do,16/Sep/26 5:52 PM
+Edit Profile Modülü Arayüz Ve Alan Kontrolü,TAS-37,10176,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:50 PM,16/Sep/26 6:03 PM,21/Sep/26 9:01 PM,,,0,,,"*Özet (Summary):* Edit Profile modalı - E-posta ve Şifre alanları kullanıcı kayıt bilgileriyle dolu gelmiyor.
+
+
+* *Ön Koşullar:* Kullanıcı sisteme giriş yapmış olmalıdır.
+* *Test Adımları:*
+*# Header alanındaki kullanıcı avatarına tıklanır ve ""Edit profile"" modali açılır.
+* *Beklenen Sonuç:* Şartname gereğince Email ve Şifre alanlarının kullanıcının kayıt bilgileriyle dolu (pre-filled) gelmesi gerekir.
+* *Gerçekleşen Sonuç:* User Name alanı dolu gelirken, Email ve Şifre alanları boş görünmektedir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,16/Sep/26 6:03 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-16 18.02.52.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10035,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006b:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,To Do,16/Sep/26 5:50 PM
+TC-04: Doğrulama Hatası (Validation) Kontrolü,TAS-36,10175,Task,In Review,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:20 PM,16/Sep/26 5:57 PM,16/Sep/26 5:54 PM,,,0,,,"* *Ön Koşul:* ""Edit profile"" modali açık durumda olmalıdır.
+* *Test Adımları:*
+*# Form alanlarına geçersiz veya hatalı formatta veriler girilir (örneğin geçersiz e-posta formatı veya boş bırakılması gereken zorunlu bir alan).
+*# *Send* butonuna tıklanır.
+* *Beklenen Sonuç:* İşlem engellenmeli ve kullanıcıya ekranın üst kısmında açılır pencere (toast/alert) şeklinde veya ilgili alanın altında uygun bir hata mesajı gösterilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005u:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,To Do,16/Sep/26 5:53 PM
+TC-03: Geçerli Verilerle Profil Güncelleme (Send Butonu),TAS-35,10174,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:19 PM,16/Sep/26 5:54 PM,16/Sep/26 5:53 PM,16/Sep/26 5:54 PM,,0,,,"* *Ön Koşul:* ""Edit profile"" modali açık durumda olmalıdır.
+* *Test Adımları:*
+*# Alanlara kurallara uygun geçerli yeni veriler girilir.
+*# *Send* butonuna tıklanır.
+* *Beklenen Sonuç:* Bilgilerin başarıyla kaydedildiği doğrulanmalı ve güncellemeler sisteme yansıtılmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00063:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,Done,16/Sep/26 5:54 PM
+TC-02: Değişiklikleri Kaydetmeden Kapatma (Kapatma Butonu),TAS-34,10173,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:19 PM,16/Sep/26 5:53 PM,,16/Sep/26 5:53 PM,,0,,,"* *Ön Koşul:* ""Edit profile"" modali açık durumda olmalıdır.
+* *Test Adımları:*
+*# Form alanlarında (örneğin kullanıcı adı veya e-posta alanında) değişiklikler yapılır.
+*# Formun sağ üst köşesinde veya üzerindeki kapatma ({{X}}) butonuna tıklanır.
+*# Modalin kapandıktan sonra profil bilgileri tekrar kontrol edilir.
+* *Beklenen Sonuç:* Kapatma butonuna tıklandığında modül kapanmalı ve yapılan değişiklikler kaydedilmeden eski halinde kalmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005v:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,Done,16/Sep/26 5:53 PM
+TC-01: Edit Profile Modülü Arayüz ve Alan Kontrolü,TAS-33,10172,Task,In Review,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:18 PM,16/Sep/26 5:53 PM,16/Sep/26 5:41 PM,,,0,,,"* *Ön Koşul:* Kullanıcı sisteme başarılı bir şekilde giriş yapmış ve ana sayfada bulunmalıdır.
+* *Test Adımları:*
+*# Header alanındaki kullanıcı avatarına tıklanarak ""Edit profile"" modali açılır.
+*# Modal içerisindeki bileşenler ve form alanları kontrol edilir.
+* *Beklenen Sonuç:*
+** Fotoğraf eklemek/düzenlemek için *""+""* butonu görünür olmalıdır.
+** *User Name* ve *Email* alanları, kullanıcının kayıt formundaki bilgileriyle dolu olarak gelmelidir.
+** *Şifre* alanı mevcut olmalıdır.
+** *Send* butonu modalın altında yer almalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005t:,,,,,,,,,10171,TAS-32,modül4 9-10-11-12,To Do,16/Sep/26 5:18 PM
+modül4 9-10-11-12,TAS-32,10171,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 5:16 PM,16/Sep/26 5:16 PM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,purple,,,,0|i0005f:,,,,,,,,,,,,To Do,16/Sep/26 5:16 PM
+TC-04: Uygulama Adı ve Logosu Doğrulaması,TAS-31,10170,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 4:08 PM,16/Sep/26 6:04 PM,16/Sep/26 6:04 PM,16/Sep/26 6:04 PM,,0,,,"* *Ön Koşul:* Uygulama masaüstü (desktop) ekran çözünürlüğünde açılmış ve kullanıcı sisteme giriş yapmış olmalıdır.
+* *Test Adımları:*
+*# Tarayıcı veya ekran çözünürlüğü masaüstü moduna getirilir.
+*# Header alanının sol üst kısmı incelenir.
+*# Uygulamanın logosunun ve adı metninin (Task Pro vb.) varlığı ve görsel bütünlüğü kontrol edilir.
+* *Beklenen Sonuç:* Desktop düzeninde uygulamanın adı ve logosu Header alanında net bir şekilde görünmeli, bozuk veya eksik olmamalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004v:,,,,,,,,,10166,TAS-27,modül3 ,Done,16/Sep/26 6:04 PM
+TC-03: Hamburger Menü ve SideBar (Yan Panel) Kontrolü,TAS-30,10169,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 4:08 PM,16/Sep/26 5:15 PM,,16/Sep/26 5:15 PM,,0,,,"* *Ön Koşul:* Uygulama mobil veya tablet ekran çözünürlüğünde (veya tarayıcı görünümünde) açılmış olmalıdır.
+* *Test Adımları:*
+*# Ekran çözünürlüğü desktop dışındaki bir boyuta (mobil/tablet) getirilir.
+*# Header alanındaki hamburger menü simgesi bulunur ve tıklanır.
+* *Beklenen Sonuç:* Hamburger menü simgesine tıklandığında *SideBar (Yan Panel)* açılmalı, desktop düzeninde ise uygulamanın adı, logosu ve ana bileşenleri düzenli şekilde görünmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004z:,,,,,,,,,10166,TAS-27,modül3 ,Done,16/Sep/26 5:15 PM
+TC-02: Kullanıcı Avatarı ve 'Edit profile' Modali,TAS-29,10168,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 4:07 PM,16/Sep/26 5:07 PM,16/Sep/26 5:02 PM,16/Sep/26 5:07 PM,,0,,,"* *Ön Koşul:* Kullanıcı giriş yapmış durumda ve Header alanındaki kişisel bilgi bloğu görünür olmalıdır.
+* *Test Adımları:*
+*# Header alanındaki kullanıcı adı ve resmi/avatarı kontrol edilir.
+*# Kullanıcının resmi/avatarının üzerine tıklanır.
+* *Beklenen Sonuç:* Avatarın üzerine tıklandığında *""Edit profile"" (Profili Düzenle)* modal penceresi ekranda açılmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004r:,,,,,,,,,10166,TAS-27,modül3 ,Done,16/Sep/26 5:07 PM
+TC-01: Tema Anahtarı (Theme Switcher) Doğrulaması,TAS-28,10167,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 4:05 PM,16/Sep/26 5:02 PM,16/Sep/26 4:06 PM,16/Sep/26 5:02 PM,,0,,,"* *Ön Koşul:* Kullanıcı sisteme başarılı bir şekilde giriş yapmış ve ana sayfada (Dashboard) bulunmalıdır.
+* *Test Adımları:*
+*# Header (Üst Menü) alanında bulunan tema anahtarı (Light, Violet, Dark) seçenekleri incelenir.
+*# Varsayılan seçili temanın durumu gözlemlenir.
+*# Sırasıyla farklı temalara (Örn: Dark ve Violet) tıklanarak arayüz renklerinin değişimi kontrol edilir.
+*# Hesaptan çıkış (Log out) yapılıp tekrar aynı hesapla giriş yapılır.
+* *Beklenen Sonuç:*
+** Varsayılan olarak bir tema seçili gelmelidir.
+** Tema değiştirildiğinde uygulamanın genel renk paleti anında seçilen temaya (Light/Violet/Dark) uyarlanmalıdır.
+** Kullanıcı çıkış yapıp tekrar giriş yaptığında, en son seçtiği tema aktif olarak kullanılmaya devam etmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004j:,,,,,,,,,10166,TAS-27,modül3 ,Done,16/Sep/26 5:02 PM
+modül3 ,TAS-27,10166,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 4:04 PM,16/Sep/26 4:04 PM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,purple,,,,0|i0004b:,,,,,,,,,,,,To Do,16/Sep/26 4:04 PM
+TC-VAL-NAME: Name Giriş Alanı Doğrulama Kuralları,TAS-26,10165,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 3:29 PM,16/Sep/26 3:38 PM,,16/Sep/26 3:38 PM,,0,,,"* *Ön Koşul:* Kullanıcı Registration sayfasında name alanında bulunmalıdır.
+* *Test Adımları:*
+*# 2 karakterden az (1 karakter) veya 32 karakterden uzun isim/değerler girilir.
+*# Latince harfler, rakamlar ve semboller içeren büyük/küçük harfli 2-32 karakter uzunluğunda geçerli bir isim girilir.
+* *Beklenen Sonuç:* Sınır değerlerin (2 ve 32 karakter sınırları dahil) doğru çalıştığı, aralıktaki geçerli isimlerin kabul edildiği, sınır dışı karakter uzunluklarında ise hata mesajı alındığı doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003z:,,,,,,,,,10162,TAS-23,modül2 5-6-7,Done,16/Sep/26 3:38 PM
+TC-VAL-PASS: Password Giriş Alanı Doğrulama ve Göz Simge Testi,TAS-25,10164,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 3:28 PM,16/Sep/26 3:37 PM,,16/Sep/26 3:37 PM,,0,,,"* *Ön Koşul:* Kullanıcı Registration sayfasında şifre alanında bulunmalıdır.
+* *Test Adımları:*
+*# Alanın boş bırakılması, 8 karakterden az veya 64 karakterden uzun şifreler girilmesi, ve şifre içinde boşluk kullanılması denenir.
+*# Latince harfler, rakamlar, büyük/küçük harfler ve semboller içeren 8-64 karakter arası geçerli bir şifre girilir.
+*# Şifre alanına metin girilerek sağdaki *""göz"" (eye)* simgesine tıklanır.
+* *Beklenen Sonuç:* Kurallara uymayan şifrelerin (uzunluk, boşluk vb.) hata döndürdüğü; varsayılan olarak gizli (yıldızlı/maskeli) gelen şifrenin göz simgesine tıklandığında açık bir şekilde görünür hale geldiği doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00043:,,,,,,,,,10162,TAS-23,modül2 5-6-7,Done,16/Sep/26 3:37 PM
+TC-VAL-EMAIL: E-mail Giriş Alanı Doğrulama Kuralları,TAS-24,10163,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 3:27 PM,16/Sep/26 3:36 PM,21/Sep/26 9:00 PM,16/Sep/26 3:36 PM,,0,,,"* *Ön Koşul:* Kullanıcı Registration veya Login sayfasında bulunmalıdır.
+* *Test Adımları:*
+*# Alan boş bırakılarak gönderilir (Zorunlu alan kontrolü).
+*# Geçerli formatta olmayan (örneğin {{@}} veya {{.}} içermeyen, ya da birden fazla {{@}} içeren) değerler denenir.
+*# Latince harfler, rakamlar ve özel karakterler içeren geçerli bir e-posta formatı girilir.
+* *Beklenen Sonuç:* Sistemin boş değere ve hatalı formatlara (birden fazla {{@}} veya eksik nokta gibi) izin vermediği; yalnızca kurallara uygun, tek {{@}} ve host kısmında nokta içeren geçerli e-postayı kabul ettiği doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003v:,,,,,,,,,10162,TAS-23,modül2 5-6-7,Done,16/Sep/26 3:36 PM
+modül2 5-6-7,TAS-23,10162,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 3:25 PM,16/Sep/26 3:25 PM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dark_grey,,,,0|i0003n:,,,,,,,,,,,,To Do,16/Sep/26 3:25 PM
+TC-REG-02: Başarılı Kayıt ve Ana Sayfa Yönlendirmesi,TAS-22,10161,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:31 PM,16/Sep/26 2:36 PM,,16/Sep/26 2:36 PM,,0,,,"* *Ön Koşul:* Kullanıcı Registration sayfasında bulunmalıdır.
+* *Test Adımları:*
+*# Kullanıcı adı, geçerli e-mail ve geçerli şifre alanları kurallara uygun şekilde doldurulur.
+*# *""Register Now""* butonuna tıklanır.
+* *Beklenen Sonuç:* Tüm alanların başarılı bir şekilde doğrulandığı, *Register Now* butonuna tıklandığında sistemin yeni kaydı oluşturarak uygulamanın ana sayfasını açtığı doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002v:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:36 PM
+C-REG-VAL-01: Boş veya Eksik Alanlarla Kayıt Denemesi,TAS-21,10160,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:30 PM,16/Sep/26 2:38 PM,,16/Sep/26 2:38 PM,,0,,,"* *Ön Koşul:* Kullanıcı Registration sayfasında bulunmalıdır ve form alanları boş veya eksik bırakılmalıdır.
+* *Test Adımları:*
+*# Alanlar boş bırakılarak (veya eksik verilerle) *""Register Now""* butonuna tıklanır.
+* *Beklenen Sonuç:* Form alanlarının doğrulanma mekanizmasının çalıştığı, sistemin kayıt yapılmasına izin vermediği ve her alanın altında (veya üst kısımda açılır pencere şeklinde) hata/uyarı mesajlarının görüntülendiği doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003d:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:38 PM
+TC-REG-UI-01: Kayıt Formu Bileşenlerinin Doğrulanması,TAS-20,10159,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:29 PM,16/Sep/26 2:38 PM,16/Sep/26 2:37 PM,16/Sep/26 2:38 PM,,0,,,"* *Ön Koşul:* Kullanıcı uygulamanın *Registration* (Kayıt) sekmesinde bulunmalıdır.
+* *Test Adımları:*
+*# Sayfa üzerindeki form alanları görsel ve işlevsel olarak kontrol edilir.
+* *Beklenen Sonuç:* Formun; *Kullanıcı adı* girişi için alan, *E-mail* girişi için alan, *Şifre* girişi için alan ve *""Register Now""*butonunu eksiksiz, görünür ve aktif olarak içerdiği doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003b:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:38 PM
+TC-LOG-04: Başarılı Giriş (Successful Login),TAS-19,10158,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:29 PM,16/Sep/26 2:39 PM,21/Sep/26 8:58 PM,16/Sep/26 2:39 PM,,0,,,"* *Ön Koşul:* Kullanıcı Login sayfasında bulunmalı, geçerli bir e-mail ve kayıtlı şifre bilgisine sahip olmalıdır.
+* *Test Adımları:*
+*# E-mail alanına geçerli formatta kayıtlı e-mail adresi girilir.
+*# Şifre alanına doğru şifre girilir.
+*# *Log In Now* butonuna tıklanır.
+* *Beklenen Sonuç:* Alanların başarılı bir şekilde doğrulandığı, *Log In Now* butonuna tıklandığında uygulamanın ana sayfasının açıldığı doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003f:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:39 PM
+TC-LOG-VAL-01: Boş veya Eksik Alanlarla Giriş Denemesinde Hata Mesajı Doğrulanması,TAS-17,10156,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:12 PM,16/Sep/26 2:15 PM,,16/Sep/26 2:15 PM,,0,,,"
+
+
+
+* *Ön Koşul:* Kullanıcı Login sayfasında bulunmalıdır ve form alanları (E-mail / Şifre) boş veya geçersiz formatta olmalıdır.
+* *Test Adımları:*
+*# Login sayfasındaki E-mail ve Şifre alanları boş bırakılır (veya eksik/hatalı veri girilir).
+*# Formun altındaki *""Log In Now""* butonuna tıklanır.
+*# Sayfa üstünde bir açılır pencere (toast/banner) veya ilgili alanların hemen altında bir uyarı ipucu çıkıp çıkmadığı gözlemlenir.
+* *Beklenen Sonuç:*
+** Form alanlarının doğrulama (validation) mekanizmasının çalıştığı,
+** Sistemin başarılı giriş yapılmasına izin vermediği,
+** Kullanıcıya ekranın üst kısmında bir açılır pencere şeklinde veya ilgili alanların altında net bir hata/uyarı mesajının görüntülendiği doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00037:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:15 PM
+TC-LOG-UI-03: 'Log In Now' Butonunun Doğrulanması,TAS-16,10155,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:09 PM,16/Sep/26 2:10 PM,,16/Sep/26 2:10 PM,,0,,,"* *Ön Koşul:* Kullanıcı uygulamanın giriş (Login) sayfasında bulunmalıdır.
+* *Test Adımları:*
+*# Login sayfası tarayıcıda açılır.
+*# Sayfa üzerindeki butonun konumu, tasarımı ve erişilebilirliği kontrol edilir.
+*# Butonun üzerindeki metin okunur.
+* *Beklenen Sonuç:* Butonun görünür ve tıklanabilir (aktif) durumda olduğu, üzerinde tam olarak *""Log In Now""* yazdığı doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002z:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:10 PM
+TC-LOG-UI-02: Şifre Giriş Alanının Doğrulanması,TAS-15,10154,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:08 PM,16/Sep/26 2:10 PM,21/Sep/26 8:58 PM,16/Sep/26 2:10 PM,,0,,,"* *Ön Koşul:* Kullanıcı uygulamanın giriş (Login) sayfasında bulunmalıdır.
+* *Test Adımları:*
+*# Login sayfası tarayıcıda açılır.
+*# Sayfa üzerindeki Şifre giriş alanı görsel olarak kontrol edilir.
+*# Şifre alanına örnek bir metin (örneğin test şifresi) girilir.
+* *Beklenen Sonuç:* Şifre giriş alanının görünür ve aktif olduğu, ayrıca girilen karakterleri maskeli (yıldız/nokta şeklinde) olarak gizleyerek gösterdiği doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002r:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:10 PM
+TC-LOG-UI-01: E-mail Giriş Alanının Varlığı,TAS-14,10153,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 2:07 PM,16/Sep/26 2:10 PM,21/Sep/26 8:57 PM,16/Sep/26 2:10 PM,,0,,,"* *Ön Koşul:* Kullanıcı uygulamanın giriş (Login) sayfasında bulunmalıdır.
+* *Test Adımları:*
+*# Login sayfası tarayıcıda açılır.
+*# Sayfa üzerindeki E-mail giriş alanı görsel olarak kontrol edilir.
+*# E-mail alanına tıklanarak odaklanılır (focus) ve metin yazılabilirliği test edilir.
+* *Beklenen Sonuç:* E-mail giriş alanının sayfada görünür, aktif ve veri yazılabilir durumda olduğu doğrulanır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002j:,,,,,,,,,10149,TAS-10,modül2 3-4,Done,16/Sep/26 2:10 PM
+modül2 3-4,TAS-10,10149,Epic,To Do,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 1:54 PM,16/Sep/26 1:54 PM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,purple,,,,0|i0002b:,,,,,,,,,,,,To Do,16/Sep/26 1:54 PM
+CLONE - TC-RESP-01: Ekran çözünürlüğü 320px altına indiğinde düzenin değişmediği ve bozulmadığı doğrulanır.,KAN-14,10116,Task,Done,KAN,taskproqa,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,16/Sep/26 11:01 AM,16/Sep/26 1:46 PM,,,,0,responsive,UI,"* *Ön Koşul:* Yetkisiz kullanıcı karşılama sayfası açık olmalıdır.
+
+*Test Adımları:*
+
+# DevTools (F12) açılır.
+# Responsive mod aktif edilir.
+# Genişlik 320px altına çekilir.
+
+*Beklenen Sonuç:*
+
+Düzen bozulmamalı, sabit kalmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,KAN-9,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00023:,,,,,,,,"16/Sep/26 11:01 AM;712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5;Test Edildi (Failed): 300px genişlikte metin ve butonlar sol taraftan ekrandan taşıyor, harfler kesiliyor.",,,,Done,16/Sep/26 11:01 AM
+TC-AUTH-03: Log In Butonu Yönlendirme Kontrolü,TAS-9,10049,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 8:44 PM,16/Sep/26 1:51 PM,16/Sep/26 1:52 PM,15/Sep/26 8:51 PM,,0,,,"*Ön Koşul:*
+Kullanıcı oturumu kapalı olmalı ve Task Pro anasayfası (karşılama ekranı) açık olmalıdır.
+
+*Test Adımları:*
+
+# Uygulama anasayfasına gidilir.
+# ""Log In"" butonunun görünürlüğü ve tıklanabilirliği kontrol edilir.
+# ""Log In"" butonuna tıklanır.
+
+*Beklenen Sonuç:*
+
+* ""Log In"" butonu ekranda net şekilde görüntülenmeli ve tıklanabilir olmalıdır.
+* Butona tıklandığında kullanıcı hatasız bir şekilde giriş formuna (giriş modal penceresine) yönlendirilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001u:r,,,,,,,,,,,,Done,15/Sep/26 8:51 PM
+TC-AUTH-02: Registration Butonu Yönlendirme Kontrolü,TAS-8,10048,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 8:42 PM,16/Sep/26 1:51 PM,16/Sep/26 1:51 PM,15/Sep/26 8:50 PM,,0,,,"*Ön Koşul:*
+Kullanıcı oturumu kapalı olmalı ve Task Pro anasayfası (karşılama ekranı) açık olmalıdır.
+
+*Test Adımları:*
+
+# Uygulama anasayfasına gidilir.
+# ""Registration"" butonunun görünürlüğü ve tıklanabilirliği kontrol edilir.
+# ""Registration"" butonuna tıklanır.
+
+*Beklenen Sonuç:*
+
+* ""Registration"" butonu ekranda net şekilde görüntülenmeli ve tıklanabilir olmalıdır.
+* Butona tıklandığında kullanıcı hatasız bir şekilde kayıt formuna (kayıt modal penceresine) yönlendirilmelidir.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001u:m,,,,,,,,,,,,Done,15/Sep/26 8:50 PM
+TC-AUTH-01	Karşılama Sayfası Bileşenlerinin Doğrulanması,TAS-7,10047,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 8:37 PM,16/Sep/26 1:52 PM,16/Sep/26 1:50 PM,15/Sep/26 8:49 PM,,0,,,"Ön Koşul:
+Kullanıcı oturumu kapalı olmalı ve Task Pro anasayfası (karşılama ekranı) açık olmalıdır.
+
+Test Adımları:
+
+# Uygulama anasayfasına gidilir.
+# Uygulamanın adı ve logosu incelenir.
+# Sayfadaki ana görsel (illüstrasyon) incelenir.
+# Kullanıcıyı uygulamayı kullanmaya teşvik eden karşılama cümlesi kontrol edilir.
+
+Beklenen Sonuç:
+
+* ""Task Pro"" logosu ve şimşek simgesi net ve hatasız görüntülenmelidir.
+* Ortadaki kullanıcı/karakter görseli ortalanmış ve bozulmadan görünmelidir.
+* Teşvik cümlesi eksiksiz ve okunabilir olmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001t:i,,,,,,,,,,,,Done,16/Sep/26 1:52 PM
+[UI/Responsive] 320px genişlikte karşılama ekranı açıklama metni sağ kenardan ekrandan taşıyor,KAN-9,10046,Bug,Done,KAN,taskproqa,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 8:07 PM,16/Sep/26 11:01 AM,,,,0,,,"* *Açıklama:*
+Ekran çözünürlüğü 320px altına indirildiğinde veya tam 320px yapıldığında karşılama sayfasındaki açıklama metninin sağ kenarı ekrandan taşmakta ve metin kesilmektedir.
+Yeniden Oluşturma Adımları (Steps to Reproduce):
+*# task-pro-qa.f.goit.study adresine yetkisiz (oturum açmamış) kullanıcı olarak gidin.
+*# Geliştirici Araçları'nı (DevTools / F12) açarak Cihaz (Responsive) moduna geçin.
+*# Genişlik (Width) alanına 320 yazıp Enter'a basın.
+*# Karşılama ekranındaki logo altında yer alan açıklama metnini inceleyin.
+* *Gerçekleşen Sonuç (Actual Result):*
+Açıklama metninin ikinci satırındaki kelimeler ekranın sağından taşmakta ve harfler kesilmektedir (""start achiev..."").
+*Beklenen Sonuç (Expected Result):*
+Gereksinime göre 320px'te düzen bozulmamalı; tüm metin sağ ve sol sınırlara taşmadan, alt satıra geçerek eksiksiz okunmalıdır.
+*Ortam (Environment):*
+** URL: task-pro-qa.f.goit.study
+** Çözünürlük: 320x852
+** Tarayıcı: Chrome / Safari (DevTools)
+
+!Ekran Resmi 2026-09-15 20.05.46.png|width=682,alt=""Ekran Resmi 2026-09-15 20.05.46.png""!",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,TAS-3,KAN-14,,15/Sep/26 8:09 PM;c81d48e0-b6a6-4e44-9fa1-7b52a275c7eb;Ekran Resmi 2026-09-15 20.05.46.png;https://meleky2307.atlassian.net/rest/api/3/attachment/content/10000,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001v:,,,,,,,,,10008,KAN-3,modül1,Done,15/Sep/26 8:07 PM
+TC-RESP-05: 1280px ve üzeri (Desktop) çözünürlükte masaüstü düzeninin tam olarak oturduğu doğrulanır.,TAS-6,10013,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 5:14 PM,16/Sep/26 1:52 PM,16/Sep/26 1:50 PM,15/Sep/26 8:22 PM,,0,responsive,UI,"*Ön Koşul:* Yetkisiz kullanıcı karşı karşılama sayfası açık olmalıdır.
+
+*Test Adımları:*
+
+# DevTools'ta genişlik 1280px ve üzerine (örn: 1440px, 1920px) ayarlanır.
+*Beklenen Sonuç:*
+Masaüstü görünümüne geçilmeli; öğeler aşırı yayılmadan/bozulmadan tasarımdaki konteyner (container) hizasında kalmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001r:i,,,,,,,,,,,,Done,16/Sep/26 1:52 PM
+TC-RESP-04: 768px - 1280px (Tablet) aralığında tasarımın düzgün görüntülendiği doğrulanır.,TAS-5,10012,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 5:13 PM,16/Sep/26 1:52 PM,,15/Sep/26 8:21 PM,,0,responsive,UI,"*Ön Koşul:* Yetkisiz kullanıcı karşı karşılama sayfası açık olmalıdır.
+
+*Test Adımları:*
+
+# DevTools'ta genişlik 768px'e getirilir (Tablet breakpoint).
+# 1279px'e kadar esnetilerek gözlemlenir.
+*Beklenen Sonuç:*
+Sayfa tablet tasarımına geçiş yapmalı, ızgara (grid) ve içerik yerleşimi tablet düzenini korumalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001r:d,,,,,,,,,,,,Done,15/Sep/26 8:21 PM
+TC-RESP-03: 375px - 768px aralığında öğelerin mobil/tasarım boyutlarına uyum sağladığı doğrulanır.,TAS-4,10011,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 5:12 PM,16/Sep/26 1:52 PM,,15/Sep/26 8:19 PM,,0,responsive,UI,"*Ön Koşul:* Yetkisiz kullanıcı karşı karşılama sayfası açık olmalıdır.
+
+*Test Adımları:*
+
+# DevTools'ta genişlik 375px yapılır.
+# Kademeli olarak 767px'e kadar artırılır.
+*Beklenen Sonuç:*
+Öğeler mobil tasarım standartlarına tam uymalı, font boyutları ve butonlar ekrana orantılı kalmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001r:9,,,,,,,,,,,,Done,15/Sep/26 8:19 PM
+TC-RESP-02: 320px ile 375px arasında esnek düzenin çalıştığı ve öğelerin ekran boyutuna uyum sağladığı doğrulanır.,TAS-2,10010,Task,Done,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,Done,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:59 PM,16/Sep/26 1:45 PM,21/Sep/26 8:53 PM,16/Sep/26 1:45 PM,,0,responsive,UI,"*Ön Koşul:* Yetkisiz kullanıcı karşı karşılama sayfası açık olmalıdır.
+
+*Test Adımları:*
+
+# DevTools responsive mod açılır.
+# Ekran genişliği 320px'ten 374px'e doğru kademeli olarak genişletilir.
+*Beklenen Sonuç:*
+Öğeler (butonlar, yazılar, kartlar) esnek (fluid) şekilde genişlemeli, viewport'a uyum sağlamalı ve yatay scrollbar çıkmamalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001r:,,,15/Sep/26 12:00 AM,,,,,,,,,Done,16/Sep/26 1:45 PM
+TC-RESP-01: Ekran çözünürlüğü 320px altına indiğinde düzenin değişmediği ve bozulmadığı doğrulanır.,TAS-3,10009,Bug,Bug,TAS,taskpromelek,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:46 PM,16/Sep/26 5:46 PM,21/Sep/26 8:57 PM,,,0,responsive,UI,"* *Ön Koşul:* Yetkisiz kullanıcı karşılama sayfası açık olmalıdır.
+
+*Test Adımları:*
+
+# DevTools (F12) açılır.
+# Responsive mod aktif edilir.
+# Genişlik 320px altına çekilir.
+
+*Beklenen Sonuç:*
+
+Düzen bozulmamalı, sabit kalmalıdır.",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,KAN-9,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001j:,,,,,,,,"15/Sep/26 6:11 PM;712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5;Test Edildi (Failed): 300px genişlikte metin ve butonlar sol taraftan ekrandan taşıyor, harfler kesiliyor.",,,,To Do,16/Sep/26 1:46 PM
+modül1,KAN-3,10008,Epic,Done,KAN,taskproqa,software,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,Medium,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:45 PM,16/Sep/26 10:10 AM,,,,0,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dark_green,,,,0|i0001b:,,,,,,,,,,,,Done,15/Sep/26 4:45 PM
+Explore VR travel features,KP-6,10005,Idea,Parking lot,KP,Keşif projem,product_discovery,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:05 PM,15/Sep/26 4:05 PM,,,,0,,,"h2. Objective
+
+{color:#97a0af}What outcome are we trying to achieve? What does success look like?{color}
+
+h2. Problem
+
+{color:#97a0af}Define customer problems, why they’re urgent and important.{color}
+
+h2. Solution
+
+{color:#97a0af}Outline the proposed solution and validation status{color}
+
+h2. Risks
+
+{color:#97a0af}List key risks and mitigation strategies{color}
+
+h2. Supporting documents
+
+{color:#97a0af}Embed docs, design file or PDF{color}",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,https://go.atlassian.com/jpd-examples-product-requirements,5.0,,,,Research VR experiences that let users preview destinations and activities before booking,1.0,0.0,,,,,0|i00013:,Later,,,,,Expand horizons,,,,,,To Do,15/Sep/26 4:05 PM
+Refactor user profile data,KP-5,10004,Idea,Parking lot,KP,Keşif projem,product_discovery,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:05 PM,15/Sep/26 4:05 PM,,,,0,,,"h2. Objective
+
+{color:#97a0af}What outcome are we trying to achieve? What does success look like?{color}
+
+h2. Problem
+
+{color:#97a0af}Define customer problems, why they’re urgent and important.{color}
+
+h2. Solution
+
+{color:#97a0af}Outline the proposed solution and validation status{color}
+
+h2. Risks
+
+{color:#97a0af}List key risks and mitigation strategies{color}
+
+h2. Supporting documents
+
+{color:#97a0af}Embed docs, design file or PDF{color}",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,https://go.atlassian.com/jpd-examples-product-requirements,4.0,,,,Streamline profile information to make it easier for users to update preferences and manage their account,3.0,0.0,,,,,0|i0000v:,Later,,,,,Delight users,,,,,,To Do,15/Sep/26 4:05 PM
+Improve waiting list experience,KP-4,10003,Idea,Parking lot,KP,Keşif projem,product_discovery,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:05 PM,15/Sep/26 4:05 PM,,,,0,,,"h2. Objective
+
+{color:#97a0af}What outcome are we trying to achieve? What does success look like?{color}
+
+h2. Problem
+
+{color:#97a0af}Define customer problems, why they’re urgent and important.{color}
+
+h2. Solution
+
+{color:#97a0af}Outline the proposed solution and validation status{color}
+
+h2. Risks
+
+{color:#97a0af}List key risks and mitigation strategies{color}
+
+h2. Supporting documents
+
+{color:#97a0af}Embed docs, design file or PDF{color}",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,SMB,Startups,,,,,,https://go.atlassian.com/jpd-examples-product-requirements,4.0,,,,"Add real-time position updates, estimated wait times, and entertaining content to keep users engaged while they wait",4.0,0.0,,,"{""start"":""2026-01-01"",""end"":""2026-03-31""}","{""start"":""2026-04-01"",""end"":""2026-06-30""}",0|i0000n:,Next,,,Pending,,Delight users,,,,,,To Do,15/Sep/26 4:05 PM
+Express checkout,KP-3,10002,Idea,Parking lot,KP,Keşif projem,product_discovery,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:05 PM,15/Sep/26 4:05 PM,,,,0,,,"h2. Objective
+
+{color:#97a0af}What outcome are we trying to achieve? What does success look like?{color}
+
+h2. Problem
+
+{color:#97a0af}Define customer problems, why they’re urgent and important.{color}
+
+h2. Solution
+
+{color:#97a0af}Outline the proposed solution and validation status{color}
+
+h2. Risks
+
+{color:#97a0af}List key risks and mitigation strategies{color}
+
+h2. Supporting documents
+
+{color:#97a0af}Embed docs, design file or PDF{color}",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,Startups,,,,,,,https://go.atlassian.com/jpd-examples-product-requirements,2.0,,,,Enable one-click purchasing with saved payment methods and addresses to reduce cart abandonment and speed up transactions,5.0,1.0,,,"{""start"":""2025-11-01"",""end"":""2025-11-30""}","{""start"":""2025-12-01"",""end"":""2025-12-31""}",0|i0000f:,Now,,,At risk,,Increase revenue,,,,,,To Do,15/Sep/26 4:05 PM
+New rewards program,KP-2,10001,Idea,Parking lot,KP,Keşif projem,product_discovery,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:05 PM,15/Sep/26 4:05 PM,,,,0,,,"h2. Objective
+
+{color:#97a0af}What outcome are we trying to achieve? What does success look like?{color}
+
+h2. Problem
+
+{color:#97a0af}Define customer problems, why they’re urgent and important.{color}
+
+h2. Solution
+
+{color:#97a0af}Outline the proposed solution and validation status{color}
+
+h2. Risks
+
+{color:#97a0af}List key risks and mitigation strategies{color}
+
+h2. Supporting documents
+
+{color:#97a0af}Embed docs, design file or PDF{color}",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,Enterprise,,,,,1.0,,https://go.atlassian.com/jpd-examples-product-requirements,1.0,,,,"Introduce a points-based loyalty system where users earn rewards for purchases and engagement, driving repeat usage and higher spend",5.0,2.0,,,"{""start"":""2025-10-01"",""end"":""2025-10-31""}","{""start"":""2025-11-01"",""end"":""2025-11-30""}",0|i00007:,Now,,,On track,,Increase revenue,,,,,,To Do,15/Sep/26 4:05 PM
+What are archived ideas?,KP-1,10000,Idea,Parking lot,KP,Keşif projem,product_discovery,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,15/Sep/26 4:05 PM,15/Sep/26 4:05 PM,,,,0,,,"If multiple and similar ideas have been created, use the merge function to keep only one and archive others. 
+
+Archiving ideas is also a way to keep your project clean without deleting idea - as an archived idea can always be restored. ",,melek yılmaz,712020:15f1eb2f-7aa5-4e11-bca8-c8ad9e0acfd5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Yes,,,,0.0,,,,,0|hzzzzz:,,,,,,,,,,,,To Do,15/Sep/26 4:05 PM

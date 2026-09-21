@@ -1,0 +1,216 @@
+{
+  "info": {
+    "_postman_id": "108ca499-3039-4294-a6b5-c44df00da964",
+    "name": "modül7 28--31",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54784462",
+    "_collection_link": "https://go.postman.co/collection/54784462-108ca499-3039-4294-a6b5-c44df00da964?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get boards",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/boards",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "boards"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Test melek1\",\"description\":\"Görev açıklaması buraya yazılacak\",\"priority\":\"high\",\"deadline\":\"2026-09-25\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/columns/{{columnid}}/tasks",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "columns",
+            "{{columnid}}",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Güncellenmiş Test Görevi\",\"description\":\"Görev açıklaması başarıyla değiştirildi.\",\"priority\":\"medium\",\"deadline\":\"2026-09-28\",\"column\":\"6aabec3e1d58b3c1b35b185e\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/tasks/{{taskıd}}",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "tasks",
+            "{{taskıd}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "negative put test",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"\",\"description\":\"Görev açıklaması başarıyla değiştirildi.\",\"priority\":\"medium\",\"deadline\":\"2026-09-28\",\"column\":\"6aabec3e1d58b3c1b35b185e\"}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/tasks/{{taskıd}}",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "tasks",
+            "{{taskıd}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "geçmiş tarih testi",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Güncellenmiş Test Görevi\",\"description\":\"Görev açıklaması başarıyla değiştirildi.\",\"priority\":\"medium\",\"deadline\":\"2025-09-28\",\"column\":\"6aabec3e1d58b3c1b35b185e\"}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/tasks/{{taskıd}}",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "tasks",
+            "{{taskıd}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

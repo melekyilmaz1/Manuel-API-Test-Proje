@@ -1,0 +1,243 @@
+{
+  "info": {
+    "_postman_id": "e695266a-efda-4f4c-a0b8-b44992aa914f",
+    "name": "modül5 13--19",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54784462",
+    "_collection_link": "https://go.postman.co/collection/54784462-e695266a-efda-4f4c-a0b8-b44992aa914f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "create board",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Postman Test Tahtası\",\n  \"icon\": \"star\",\n  \"background\": \"none\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/boards",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "boards"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_0lok}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"m11@gmail.com\",\n  \"password\": \"12345678\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/user/login",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "user",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put board",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Güncellenmiş Postman Tahtası\",\n  \"icon\": \"star\",\n  \"background\": \"none\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/boards/{{boardıd}}",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "boards",
+            "{{boardıd}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "supporttesti",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"message\": \"aa\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/support",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "support"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete board",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/boards/{{boardıd}}",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "boards",
+            "{{boardıd}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Log out",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://task-pro-qa.b.goit.study/user/logout",
+          "protocol": "https",
+          "host": [
+            "task-pro-qa",
+            "b",
+            "goit",
+            "study"
+          ],
+          "path": [
+            "user",
+            "logout"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "json_web_token_16nr",
+      "secret": true
+    }
+  ]
+}
